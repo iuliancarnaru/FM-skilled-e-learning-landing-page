@@ -4,14 +4,31 @@
   padding-top: 2.5rem;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 35rem));
   column-gap: 3rem;
   margin-bottom: 6rem;
 
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: repeat(auto-fit, 1fr);
+  }
+
+  @media screen and (max-width: $bp-tablet) {
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 33.9rem));
+
+    column-gap: 1.1rem;
+    margin-bottom: 3rem;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+  }
+
   .card {
     position: relative;
-    width: 350px;
-    height: 322px;
+    // width: 35rem;
+    height: 32.2rem;
     border-radius: 1.5rem;
     background-color: $color-white-solid;
     margin-bottom: 8rem;
@@ -22,6 +39,13 @@
     flex-direction: column;
     justify-content: flex-start;
 
+    @media screen and (max-width: $bp-tablet) {
+      // width: 33.9rem;
+      height: 28.3rem;
+      margin-bottom: 5.6rem;
+      padding: 5.6rem 3.2rem 3.2rem;
+    }
+
     &__img {
       position: absolute;
       top: -2.6rem;
@@ -30,11 +54,19 @@
     &__heading {
       @include heading-s;
       margin-bottom: 2.4rem;
+
+      @media screen and (max-width: $bp-tablet) {
+        @include heading-xs;
+      }
     }
 
     &__text {
       @include body-m;
       color: $color-waterloo;
+
+      @media screen and (max-width: $bp-tablet) {
+        @include body-s;
+      }
     }
 
     &__cta {

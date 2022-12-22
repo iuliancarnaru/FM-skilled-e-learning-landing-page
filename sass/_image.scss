@@ -7,9 +7,22 @@
 
   margin-bottom: 4.6rem;
 
+  @media screen and (max-width: $bp-mobile) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
   img {
+    display: block;
     position: absolute;
     bottom: 0;
     left: 0;
+
+    @media screen and (max-width: $bp-mobile) {
+      width: 100%;
+      position: initial;
+      height: auto;
+      display: block;
+    }
   }
 }

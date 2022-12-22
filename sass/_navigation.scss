@@ -7,6 +7,12 @@
   align-items: center;
   padding-top: 2.4rem;
 
+  @media screen and (max-width: $bp-mobile) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin-bottom: 3.8rem;
+  }
+
   &__logo {
     width: 11.4rem;
 

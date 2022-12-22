@@ -13,12 +13,20 @@
     &--heading {
       @include heading-xl;
       margin-bottom: 2.9rem;
+
+      @media screen and (max-width: $bp-tablet) {
+        @include heading-l;
+      }
     }
 
     &--info {
       @include body-m;
       margin-bottom: 4rem;
       color: $color-waterloo;
+
+      @media screen and (max-width: $bp-tablet) {
+        @include body-s;
+      }
     }
   }
 }
