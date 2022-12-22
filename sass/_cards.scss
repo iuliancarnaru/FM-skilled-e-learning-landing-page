@@ -28,14 +28,17 @@
     }
 
     &__heading {
+      @include heading-s;
       margin-bottom: 2.4rem;
     }
 
     &__text {
+      @include body-m;
       color: $color-waterloo;
     }
 
     &__cta {
+      @include body-m-bold;
       color: $color-violet-red;
       text-decoration: none;
       display: inline-flex;
@@ -45,6 +48,10 @@
     &--1 {
       background: $gradient-light;
       color: $color-white-solid;
+
+      &-heading {
+        @include heading-m;
+      }
     }
   }
 }

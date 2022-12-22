@@ -11,10 +11,12 @@
     max-width: 45.7rem;
 
     &--heading {
+      @include heading-xl;
       margin-bottom: 2.9rem;
     }
 
     &--info {
+      @include body-m;
       margin-bottom: 4rem;
       color: $color-waterloo;
     }

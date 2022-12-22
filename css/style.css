@@ -1,3 +1,7 @@
+.cards .card--1-heading, .cards .card__heading, .content__text--heading {
+  font-weight: 800;
+}
+
 *,
 *::before,
 *::after {
@@ -27,6 +31,7 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   border-radius: 100vw;
   border: none;
   padding: 1.4rem 3.2rem;
@@ -34,62 +39,37 @@ body {
   font-size: 1.8rem;
   line-height: 2.8rem;
 }
-
-.btn--nav {
-  background-color: #13183f;
-  color: #ffffff;
+@media screen and (max-width: 48em) {
+  .btn {
+    padding: 0.9rem 1.4rem;
+  }
+}
+.btn:hover {
+  filter: brightness(1.9);
 }
 
+.btn--nav {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+  background-color: #13183f;
+  color: #ffffff;
+  z-index: 2;
+}
 .btn--header {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   color: #ffffff;
 }
 
 .btn--footer {
-  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
-  color: #ffffff;
-}
-
-.heading-s, .heading-m, .heading-l, .heading-xl {
-  font-weight: 800;
-}
-
-.heading-xl {
-  font-size: 5.6rem;
-  line-height: 7rem;
-}
-
-.heading-l {
-  font-size: 4rem;
-  line-height: 5.1rem;
-}
-
-.heading-m {
-  font-size: 3.2rem;
-  line-height: 4rem;
-}
-
-.heading-s {
-  font-size: 2.4rem;
-  line-height: 2.8rem;
-}
-
-.body-m-bold {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
-}
-
-.body-m {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  font-weight: 500;
-}
-
-.body-s {
-  font-size: 1.6rem;
-  line-height: 2.8rem;
-  font-weight: 500;
+  background: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  color: #ffffff;
 }
 
 .navigation {
@@ -101,7 +81,12 @@ body {
   padding-top: 2.4rem;
 }
 .navigation__logo {
-  height: 2.76rem;
+  width: 11.4rem;
+}
+@media screen and (max-width: 48em) {
+  .navigation__logo {
+    width: 8.9rem;
+  }
 }
 
 .image {
@@ -128,9 +113,14 @@ body {
   max-width: 45.7rem;
 }
 .content__text--heading {
+  font-size: 5.6rem;
+  line-height: 7rem;
   margin-bottom: 2.9rem;
 }
 .content__text--info {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
   margin-bottom: 4rem;
   color: #83869a;
 }
@@ -162,12 +152,20 @@ body {
   top: -2.6rem;
 }
 .cards .card__heading {
+  font-size: 2.4rem;
+  line-height: 3rem;
   margin-bottom: 2.4rem;
 }
 .cards .card__text {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
   color: #83869a;
 }
 .cards .card__cta {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
   color: #f74780;
   text-decoration: none;
   display: inline-flex;
@@ -176,6 +174,10 @@ body {
 .cards .card--1 {
   background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   color: #ffffff;
+}
+.cards .card--1-heading {
+  font-size: 3.2rem;
+  line-height: 4rem;
 }
 
 .footer {

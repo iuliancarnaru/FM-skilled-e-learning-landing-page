@@ -8,6 +8,10 @@
   padding-top: 2.4rem;
 
   &__logo {
-    height: 2.76rem;
+    width: 11.4rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 8.9rem;
+    }
   }
 }

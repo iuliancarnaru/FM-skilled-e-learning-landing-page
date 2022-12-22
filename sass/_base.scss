@@ -19,6 +19,8 @@ $font-primary: "Plus Jakarta Sans", sans-serif;
 $shadow-box: 0px 2.5rem 5rem rgba(6, 22, 141, 0.0442381);
 
 // BREAKPOINTS
+$bp-tablet: 48em;
+$bp-mobile: 23.4em;
 
 *,
 *::before,
@@ -54,27 +56,45 @@ body {
 }
 
 .btn {
+  cursor: pointer;
   border-radius: 100vw;
   border: none;
-  // width: 15.7rem;
-  // height: 5.6rem;
   padding: 1.4rem 3.2rem;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.8rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 0.9rem 1.4rem;
+  }
+
+  &:hover {
+    filter: brightness(1.9);
+  }
 }
 
 .btn--nav {
+  @include body-m-bold;
   background-color: $color-bunting;
   color: $color-white-solid;
+  z-index: 2;
+
+  @media screen and (max-width: $bp-tablet) {
+    // font-style: normal;
+    // font-size: 1.6rem;
+    // font-weight: 700;
+    // line-height: 28px;
+  }
 }
 
 .btn--header {
+  @include body-m-bold;
   background: $gradient-light;
   color: $color-white-solid;
 }
 
 .btn--footer {
+  @include body-m-bold;
   background: $gradient-footer;
   color: $color-white-solid;
 }

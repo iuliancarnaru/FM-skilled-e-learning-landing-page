@@ -2,43 +2,43 @@
   font-weight: 800;
 }
 
-.heading-xl {
+@mixin heading-xl {
   @extend %heading;
   font-size: 5.6rem;
   line-height: 7rem;
 }
 
-.heading-l {
+@mixin heading-l {
   @extend %heading;
   font-size: 4rem;
   line-height: 5.1rem;
 }
 
-.heading-m {
+@mixin heading-m {
   @extend %heading;
   font-size: 3.2rem;
   line-height: 4rem;
 }
 
-.heading-s {
+@mixin heading-s {
   @extend %heading;
   font-size: 2.4rem;
-  line-height: 2.8rem;
+  line-height: 3rem;
 }
 
-.body-m-bold {
+@mixin body-m-bold {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 700;
 }
 
-.body-m {
+@mixin body-m {
   font-size: 1.8rem;
   line-height: 2.8rem;
   font-weight: 500;
 }
 
-.body-s {
+@mixin body-s {
   font-size: 1.6rem;
   line-height: 2.8rem;
   font-weight: 500;
