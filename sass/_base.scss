@@ -10,6 +10,7 @@ $color-white-solid: #ffffff;
 $gradient-light: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
 $gradient-dark: linear-gradient(#4851ff, #f02aa6);
 $gradient-background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+$gradient-footer: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 
 // FONTS
 $font-primary: "Plus Jakarta Sans", sans-serif;
@@ -74,6 +75,6 @@ body {
 }
 
 .btn--footer {
-  background: $gradient-dark;
+  background: $gradient-footer;
   color: $color-white-solid;
 }
