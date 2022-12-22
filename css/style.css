@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(3.9rem, 1fr) repeat(2, minmax(10rem, 55.5rem)) minmax(3.9rem, 1fr);
-  grid-template-rows: 8rem 77rem repeat(2, minmax(12rem, min-content));
+  grid-template-rows: 8rem 76rem repeat(2, minmax(12rem, min-content));
 }
 
 .btn {
@@ -151,7 +151,7 @@ body {
   height: 322px;
   border-radius: 1.5rem;
   background-color: #ffffff;
-  margin-bottom: 5.6rem;
+  margin-bottom: 8rem;
   box-shadow: 0px 2.5rem 5rem rgba(6, 22, 141, 0.0442381);
   padding: 6.4rem 3.2rem 4rem 3.2rem;
   display: flex;
