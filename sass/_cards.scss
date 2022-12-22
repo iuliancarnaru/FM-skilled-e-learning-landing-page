@@ -1,7 +1,7 @@
 .cards {
   grid-column: 2 / 4;
   grid-row: 3 / 4;
-  padding-top: 2.4rem;
+  padding-top: 2.5rem;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -16,7 +16,7 @@
     background-color: $color-white-solid;
     margin-bottom: 8rem;
     box-shadow: $shadow-box;
-    padding: 6.4rem 3.2rem 4rem 3.2rem;
+    padding: 6.4rem 3.3rem 4rem 3.3rem;
 
     display: flex;
     flex-direction: column;
