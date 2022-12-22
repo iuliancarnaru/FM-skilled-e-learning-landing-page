@@ -1,0 +1,45 @@
+%heading {
+  font-weight: 800;
+}
+
+.heading-xl {
+  @extend %heading;
+  font-size: 5.6rem;
+  line-height: 7rem;
+}
+
+.heading-l {
+  @extend %heading;
+  font-size: 4rem;
+  line-height: 5.1rem;
+}
+
+.heading-m {
+  @extend %heading;
+  font-size: 3.2rem;
+  line-height: 4rem;
+}
+
+.heading-s {
+  @extend %heading;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+}
+
+.body-m-bold {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 700;
+}
+
+.body-m {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+.body-s {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}

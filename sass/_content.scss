@@ -1,0 +1,22 @@
+.content {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 4.6rem;
+
+  &__text {
+    max-width: 45.7rem;
+
+    &--heading {
+      margin-bottom: 2.9rem;
+    }
+
+    &--info {
+      margin-bottom: 4rem;
+      color: $color-waterloo;
+    }
+  }
+}

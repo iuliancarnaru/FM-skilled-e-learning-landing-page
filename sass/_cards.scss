@@ -1,0 +1,50 @@
+.cards {
+  grid-column: 2 / 4;
+  grid-row: 3 / 4;
+  padding-top: 2.4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  column-gap: 3rem;
+  margin-bottom: 8.4rem;
+
+  .card {
+    position: relative;
+    width: 350px;
+    height: 322px;
+    border-radius: 1.5rem;
+    background-color: $color-white-solid;
+    margin-bottom: 5.6rem;
+    box-shadow: $shadow-box;
+    padding: 6.4rem 3.2rem 4rem 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__img {
+      position: absolute;
+      top: -2.2rem;
+    }
+
+    &__heading {
+      margin-bottom: 2.4rem;
+    }
+
+    &__text {
+      color: $color-waterloo;
+    }
+
+    &__cta {
+      color: $color-violet-red;
+      text-decoration: none;
+      display: inline-flex;
+      margin-top: auto;
+    }
+
+    &--1 {
+      background: $gradient-light;
+      color: $color-white-solid;
+    }
+  }
+}

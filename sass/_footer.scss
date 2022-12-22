@@ -1,0 +1,16 @@
+.footer {
+  background-color: yellowgreen;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+
+  background-color: $color-bunting;
+}
+
+.footer__content {
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

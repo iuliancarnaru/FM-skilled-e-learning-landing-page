@@ -1,0 +1,13 @@
+.navigation {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.4rem;
+
+  &__logo {
+    height: 2.76rem;
+  }
+}

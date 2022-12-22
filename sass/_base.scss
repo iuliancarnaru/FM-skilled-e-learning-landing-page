@@ -1,0 +1,78 @@
+// COLORS
+$color-scampi: #666ca3;
+$color-bunting: #13183f;
+$color-waterloo: #83869a;
+$color-violet-red: #f74780;
+$color-carnation-pink: #ffa7c3;
+$color-white-solid: #ffffff;
+
+// GRADIENTS
+$gradient-light: linear-gradient(#f02aa6, #ff6f48);
+$gradient-dark: linear-gradient(#4851ff, #f02aa6);
+$gradient-background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
+// FONTS
+$font-primary: "Plus Jakarta Sans", sans-serif;
+
+// SHADOWS
+$shadow-box: 0px 2.5rem 5rem rgba(6, 22, 141, 0.0442381);
+
+// BREAKPOINTS
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: $font-primary;
+  background: $gradient-background;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 144rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns:
+    minmax(3.9rem, 1fr)
+    repeat(2, minmax(10rem, 55.5rem))
+    minmax(3.9rem, 1fr);
+
+  grid-template-rows: 8rem 77rem repeat(2, minmax(12rem, min-content));
+}
+
+.btn {
+  border-radius: 100vw;
+  border: none;
+  width: 15.7rem;
+  height: 5.6rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.btn--nav {
+  background-color: $color-bunting;
+  color: $color-white-solid;
+}
+
+.btn--header {
+  background: $gradient-light;
+  color: $color-white-solid;
+}
+
+.btn--footer {
+  background: $gradient-dark;
+  color: $color-white-solid;
+}
