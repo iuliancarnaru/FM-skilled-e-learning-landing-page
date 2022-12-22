@@ -23,7 +23,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(3.9rem, 1fr) repeat(2, minmax(10rem, 55.5rem)) minmax(3.9rem, 1fr);
-  grid-template-rows: 8rem 75rem repeat(2, minmax(12rem, min-content));
+  grid-template-rows: 8rem 76rem repeat(2, minmax(12rem, min-content));
 }
 
 .btn {
